@@ -1,0 +1,15 @@
+body{
+    background-color: goldenrod;
+    font-family: sans-serif;
+    color: black;
+}
+
+.box-welcome,
+.box-button{
+    padding: 10px;
+}
+
+.green{
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

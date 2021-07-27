@@ -14,6 +14,40 @@
 
 <body>
 
+    <div id="container" class="container-fluid bg-primary p-3">
+        <div class="row text-center">
+            <div class="col-4">
+                <div class="col-4 p-1">
+                    <img class="img-thumbnail" :src="image" alt="">
+                </div>
+                <div class="col-1">
+                    <label for="Name">Nome</label>
+                    <input v-model="message.name" type="text" placeholder="Inserisci il tuo nome...">
+                    <label for="Surname">Cognome</label>
+                    <input v-model="message.surname" type="text" placeholder="Inserisci il tuo cognome...">
+                    <label for="Email">Email</label>
+                    <input v-model="message.email" type="email" placeholder="Inserisci la tua email...">
+                </div>
+            </div>
+            <div class="col-2">
+                <h1 :class="colortext">Scheda</h1>
+                <div class="box img-thumbnail">
+                    <p class="h3">{{ message.name }}</p>
+                    <p class="h3">{{ message.surname }}</p>
+                    <p class="h3">{{ message.email }}</p>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <div class="box-welcome">
+                    <h1>{{ welcome }}</h1>
+                </div>
+                <div class="box-button">
+                    <button @click="bye">Click this!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./js/script.js"></script>
 </body>
