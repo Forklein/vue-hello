@@ -13,3 +13,8 @@ body{
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+p{
+    font-weight: 800;
+    font-size: 20px;
+}
